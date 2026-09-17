@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudHost - Web Hosting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Cloud<span>Host</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-title">FAST • SECURE • RELIABLE</p>
+
+            <h1>
+                Powerful Web Hosting
+                <span>Made Simple.</span>
+            </h1>
+
+            <p class="hero-text">
+                Launch your website with fast servers, reliable uptime,
+                free SSL and easy-to-use hosting tools.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn primary-btn">View Plans</a>
+                <a href="#features" class="btn secondary-btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="server-card">
+            <div class="server-icon">☁️</div>
+            <h3>Your Website</h3>
+            <p>Online 24/7</p>
+
+            <div class="status">
+                <span></span> Server Online
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="section-heading">
+            <p>WHY CHOOSE US</p>
+            <h2>Everything You Need</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Servers</h3>
+                <p>
+                    High-performance servers help your website
+                    load quickly for visitors.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Free SSL</h3>
+                <p>
+                    Keep your website and visitors protected
+                    with SSL encryption.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Secure Hosting</h3>
+                <p>
+                    Modern security features help protect your
+                    website and data.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>24/7 Support</h3>
+                <p>
+                    Get help whenever you need it from our
+                    customer support team.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+
+        <div class="section-heading">
+            <p>SIMPLE PRICING</p>
+            <h2>Choose Your Hosting Plan</h2>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+                <h3>Starter</h3>
+                <p class="description">For personal websites</p>
+
+                <div class="price">
+                    ₹99<span>/month</span>
+                </div>
+
+                <ul>
+                    <li>✓ 1 Website</li>
+                    <li>✓ 10 GB Storage</li>
+                    <li>✓ Free SSL</li>
+                    <li>✓ Basic Support</li>
+                </ul>
+
+                <button class="plan-btn" onclick="selectPlan('Starter')">
+                    Get Started
+                </button>
+            </div>
+
+            <div class="price-card popular">
+                <div class="popular-label">POPULAR</div>
+
+                <h3>Business</h3>
+                <p class="description">For growing businesses</p>
+
+                <div class="price">
+                    ₹299<span>/month</span>
+                </div>
+
+                <ul>
+                    <li>✓ 10 Websites</li>
+                    <li>✓ 50 GB Storage</li>
+                    <li>✓ Free SSL</li>
+                    <li>✓ Daily Backups</li>
+                    <li>✓ Priority Support</li>
+                </ul>
+
+                <button class="plan-btn" onclick="selectPlan('Business')">
+                    Get Started
+                </button>
+            </div>
+
+            <div class="price-card">
+                <h3>Pro</h3>
+                <p class="description">For professional websites</p>
+
+                <div class="price">
+                    ₹599<span>/month</span>
+                </div>
+
+                <ul>
+                    <li>✓ Unlimited Websites</li>
+                    <li>✓ 100 GB Storage</li>
+                    <li>✓ Free SSL</li>
+                    <li>✓ Daily Backups</li>
+                    <li>✓ Premium Support</li>
+                </ul>
+
+                <button class="plan-btn" onclick="selectPlan('Pro')">
+                    Get Started
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <div class="section-heading">
+            <p>CONTACT US</p>
+            <h2>Let's Get Your Website Online</h2>
+        </div>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn primary-btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">Cloud<span>Host</span></div>
+
+        <p>
+            © 2026 CloudHost. All rights reserved.
+        </p>
+
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
